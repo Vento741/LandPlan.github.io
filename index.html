@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Land Plan - студия ландшафтного дизайна в Пензе. Создаем уникальные ландшафтные проекты по всей России">
+    <title>Land Plan - Студия ландшафтного дизайна</title>
+    
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <!-- Прелоадер -->
+    <div class="preloader">
+        <div class="preloader__plant"></div>
+    </div>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container header__container">
+            <!-- Логотип -->
+            <a href="/" class="logo">
+                <img src="assets/logo.png" alt="Land Plan" class="logo__img">
+            </a>
+
+            <!-- Мобильное меню -->
+            <button class="burger" aria-label="Открыть меню">
+                <span class="burger__line"></span>
+            </button>
+
+            <!-- Навигация -->
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about" class="nav__link">О студии</a></li>
+                    <li class="nav__item"><a href="#team" class="nav__link">Команда</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Услуги</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Портфолио</a></li>
+                    <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <!-- Контакты в шапке -->
+            <div class="header__contacts">
+                <a href="https://t.me/LandPlanBot" class="header__bot-button" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.3333 1.66666L9.16667 10.8333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18.3333 1.66666L12.5 18.3333L9.16667 10.8333L1.66667 7.49999L18.3333 1.66666Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Записаться на консультацию
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="main">
+        <!-- Hero секция -->
+        <section class="hero">
+            <div class="hero__slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide hero__slide">
+                        <div class="hero__slide-bg" style="background-image: url('assets/hero/slide1.jpg');"></div>
+                        <div class="hero__content">
+                            <div class="container">
+                                <h1 class="hero__title animate-on-scroll">Создаем пространство вашей мечты</h1>
+                                <p class="hero__subtitle animate-on-scroll">Ландшафтный дизайн в Пензе и по всей России</p>
+                                <button class="hero__button button animate-on-scroll">Получить консультацию</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide hero__slide">
+                        <div class="hero__slide-bg" style="background-image: url('assets/hero/slide2.jpg');"></div>
+                        <div class="hero__content">
+                            <div class="container">
+                                <h2 class="hero__title animate-on-scroll">Комплексное проектирование</h2>
+                                <p class="hero__subtitle animate-on-scroll">Полный пакет чертежей: от генплана до детализации каждого элемента</p>
+                                <button class="hero__button button animate-on-scroll">Заказать проект</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide hero__slide">
+                        <div class="hero__slide-bg" style="background-image: url('assets/hero/slide3.jpg');"></div>
+                        <div class="hero__content">
+                            <div class="container">
+                                <h2 class="hero__title animate-on-scroll">Подбор и согласование</h2>
+                                <p class="hero__subtitle animate-on-scroll">Поможем выбрать надёжных подрядчиков, растения и материалы для вашего проекта</p>
+                                <button class="hero__button button animate-on-scroll">Узнать подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide hero__slide">
+                        <div class="hero__slide-bg" style="background-image: url('assets/hero/slide4.jpg');"></div>
+                        <div class="hero__content">
+                            <div class="container">
+                                <h2 class="hero__title animate-on-scroll">Авторский надзор</h2>
+                                <p class="hero__subtitle animate-on-scroll">Контролируем каждый этап реализации проекта для идеального результата</p>
+                                <button class="hero__button button animate-on-scroll">Обсудить проект</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide hero__slide">
+                        <div class="hero__slide-bg" style="background-image: url('assets/hero/slide5.jpg');"></div>
+                        <div class="hero__content">
+                            <div class="container">
+                                <h2 class="hero__title animate-on-scroll">Индивидуальный подход</h2>
+                                <p class="hero__subtitle animate-on-scroll">Создаём уникальные проекты с учётом всех ваших пожеланий и особенностей участка</p>
+                                <button class="hero__button button animate-on-scroll">Заказать проект</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__pagination swiper-pagination"></div>
+                <div class="hero__bottom-controls">
+                    <div class="swiper-button-prev"></div>
+                    <a href="https://t.me/LandPlanBot" class="hero__consultation-button" target="_blank">
+                        <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.3333 1.66666L9.16667 10.8333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18.3333 1.66666L12.5 18.3333L9.16667 10.8333L1.66667 7.49999L18.3333 1.66666Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Телеграм бот
+                    </a>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <!-- Декоративные элементы -->
+            <div class="hero__leaves">
+                <div class="hero__leaf hero__leaf--1"></div>
+                <div class="hero__leaf hero__leaf--2"></div>
+                <div class="hero__leaf hero__leaf--3"></div>
+            </div>
+        </section>
+
+        <!-- О студии -->
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">О студии Land Plan</h2>
+                <p class="about__description animate-on-scroll">
+                    Мы создаем уникальные ландшафтные проекты, где каждая деталь продумана до мелочей. 
+                    Наша команда профессионалов специализируется на комплексном подходе: от проектирования 
+                    до подбора материалов и авторского надзора за реализацией.
+                </p>
+                <div class="about__team">
+                    <article class="about__member animate-on-scroll">
+                        <div class="about__member-image">
+                            <img src="assets/team/designer1.jpg" alt="Анастасия Шалаева" loading="lazy">
+                        </div>
+                        <div class="about__member-content">
+                            <h3 class="about__member-name">Анастасия Шалаева</h3>
+                            <p class="about__member-position">Главный ландшафтный дизайнер</p>
+                            <p class="about__member-description">
+                                Более 7 лет создаю уникальные ландшафтные проекты. Специализируюсь на современных 
+                                эко-решениях и устойчивом дизайне. Каждый проект для меня - это возможность 
+                                создать особенное пространство, где природа и дизайн существуют в гармонии.
+                            </p>
+                            <div class="about__member-achievements">
+                                <span class="about__achievement">Победитель Garden Design 2022</span>
+                                <span class="about__achievement">100+ проектов</span>
+                                <span class="about__achievement">Эксперт по эко-дизайну</span>
+                            </div>
+                            <a href="https://t.me/LandPlanBot" class="about__member-contact" target="_blank">
+                                Записаться на консультацию
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="about__member animate-on-scroll">
+                        <div class="about__member-image">
+                            <img src="assets/team/designer2.jpg" alt="Кристина Коновалова" loading="lazy">
+                        </div>
+                        <div class="about__member-content">
+                            <h3 class="about__member-name">Кристина Коновалова</h3>
+                            <p class="about__member-position">Ведущий ландшафтный архитектор</p>
+                            <p class="about__member-description">
+                                Создаю функциональные и эстетичные пространства с учетом особенностей участка 
+                                и пожеланий клиента. Специализируюсь на сложных рельефах и водных системах. 
+                                Каждый проект разрабатываю с учетом сезонной динамики растений.
+                            </p>
+                            <div class="about__member-achievements">
+                                <span class="about__achievement">Магистр ландшафтной архитектуры</span>
+                                <span class="about__achievement">50+ реализованных проектов</span>
+                                <span class="about__achievement">Эксперт по водным системам</span>
+                            </div>
+                            <a href="https://t.me/LandPlanBot" class="about__member-contact" target="_blank">
+                                Обсудить проект
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Здесь будут остальные секции -->
+    </main>
+
+    <!-- Подключение Swiper.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
+    <!-- Скрипты -->
+    <script src="js/main.js"></script>
+</body>
+</html> 
