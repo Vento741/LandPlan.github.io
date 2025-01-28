@@ -124,4 +124,24 @@ document.addEventListener('DOMContentLoaded', () => {
             prevEl: '.swiper-button-prev',
         },
     });
+});
+
+// Переворот карточек услуг
+document.addEventListener('DOMContentLoaded', () => {
+    const serviceCards = document.querySelectorAll('.service-card');
+    
+    serviceCards.forEach(card => {
+        const frontFlipBtn = card.querySelector('.service-card__flip-btn');
+        const backFlipBtn = card.querySelector('.service-card__flip-btn--back');
+        
+        // Переворот на заднюю сторону
+        frontFlipBtn.addEventListener('click', () => {
+            card.classList.add('is-flipped');
+        });
+        
+        // Переворот обратно
+        backFlipBtn.addEventListener('click', () => {
+            card.classList.remove('is-flipped');
+        });
+    });
 }); 
