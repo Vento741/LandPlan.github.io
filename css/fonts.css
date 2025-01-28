@@ -9,7 +9,23 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: url('../fonts/caviar-dreams-bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* Inter */
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
 @font-face {
     font-family: 'Inter';
     src: url('../fonts/Inter-Regular.otf') format('opentype');
@@ -36,7 +52,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('../fonts/Inter-Bold.woff2.otf') format('opentype');
+    src: url('../fonts/Inter-ThinItalic.otf') format('opentype');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -47,6 +63,14 @@
     font-family: 'Montserrat';
     src: url('../fonts/Montserrat-Regular.woff2') format('woff2');
     font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Medium.otf') format('opentype');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
