@@ -38,7 +38,8 @@
                     <li class="nav__item"><a href="#about" class="nav__link">О студии</a></li>
                     <li class="nav__item"><a href="#services" class="nav__link">Услуги</a></li>
                     <li class="nav__item"><a href="#step_by_step" class="nav__link">Поэтапность</a></li>
-                    <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+                    <li class="nav__item"><a href="#advantages" class="nav__link">Преимущества</a></li>
+                    <li class="nav__item"><a href="#reviews" class="nav__link">Отзывы</a></li>
                 </ul>
             </nav>
 
@@ -531,13 +532,147 @@
                 <div class="process__leaf process__leaf--3"></div>
             </div>
         </section>
+
+        <!-- Преимущества -->
+        <section class="advantages" id="advantages">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Наши преимущества</h2>
+                <div class="advantages__grid">
+                    <!-- Карточка 1 -->
+                    <div class="advantage-card animate-on-scroll">
+                        <div class="advantage-card__icon">
+                            <svg class="advantage-card__icon-svg" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M7.5 12L10.5 15L16.5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="advantage-card__title">Опыт и профессионализм</h3>
+                        <p class="advantage-card__description">
+                            Команда опытных специалистов с профильным образованием и обширным портфолио проектов
+                        </p>
+                        <div class="advantage-card__counter" data-value="7">
+                            <span class="advantage-card__number">7</span>
+                            <span class="advantage-card__unit">лет</span>
+                        </div>
+                        <span class="advantage-card__label">Успешной работы</span>
+                    </div>
+
+                    <!-- Карточка 2 -->
+                    <div class="advantage-card animate-on-scroll">
+                        <div class="advantage-card__icon">
+                            <svg class="advantage-card__icon-svg" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2"/>
+                                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="advantage-card__title">Комплексный подход</h3>
+                        <p class="advantage-card__description">
+                            От проектирования до реализации и последующего обслуживания вашего сада
+                        </p>
+                        <div class="advantage-card__counter" data-value="100">
+                            <span class="advantage-card__number">100</span>
+                            <span class="advantage-card__unit">+</span>
+                        </div>
+                        <span class="advantage-card__label">Реализованных проектов</span>
+                    </div>
+
+                    <!-- Карточка 3 -->
+                    <div class="advantage-card animate-on-scroll">
+                        <div class="advantage-card__icon">
+                            <svg class="advantage-card__icon-svg" viewBox="0 0 24 24" fill="none">
+                                <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 10c0 4 3 4 3 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="advantage-card__title">Гарантия качества</h3>
+                        <p class="advantage-card__description">
+                            Авторский надзор и гарантийное обслуживание всех выполненных работ
+                        </p>
+                        <div class="advantage-card__counter" data-value="3">
+                            <span class="advantage-card__number">3</span>
+                            <span class="advantage-card__unit">года</span>
+                        </div>
+                        <span class="advantage-card__label">Гарантии на работы</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Отзывы -->
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Отзывы наших клиентов</h2>
+                <div class="reviews__slider swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Отзыв 1 -->
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-card__header">
+                                    <img src="assets/reviews/avatar1.jpg" alt="Анна" class="review-card__avatar">
+                                    <div class="review-card__info">
+                                        <h3 class="review-card__name">Анна</h3>
+                                        <p class="review-card__project">Проект: Современный минимализм</p>
+                                    </div>
+                                </div>
+                                <p class="review-card__text">
+                                    "Очень довольна работой команды Land Plan. Все этапы проекта были выполнены точно в срок. 
+                                    Особенно впечатлила работа с растениями - подобрали идеальные сорта для нашего участка."
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Отзыв 2 -->
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-card__header">
+                                    <img src="assets/reviews/avatar2.jpg" alt="Михаил" class="review-card__avatar">
+                                    <div class="review-card__info">
+                                        <h3 class="review-card__name">Михаил</h3>
+                                        <p class="review-card__project">Проект: Природный оазис</p>
+                                    </div>
+                                </div>
+                                <p class="review-card__text">
+                                    "Профессиональный подход на всех этапах. Дизайнеры учли все наши пожелания и предложили 
+                                    отличные решения. Результат превзошел ожидания!"
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Отзыв 3 -->
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-card__header">
+                                    <img src="assets/reviews/avatar3.jpg" alt="Елена" class="review-card__avatar">
+                                    <div class="review-card__info">
+                                        <h3 class="review-card__name">Елена</h3>
+                                        <p class="review-card__project">Проект: Классический сад</p>
+                                    </div>
+                                </div>
+                                <p class="review-card__text">
+                                    "Благодарны команде за создание нашего прекрасного сада. Авторский надзор был на высоте - 
+                                    все работы выполнены качественно и в срок."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__navigation">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Здесь будут остальные секции -->
     </main>
 
     <!-- Плавающая кнопка портфолио -->
     <a href="portfolio.html" class="floating-portfolio">
         <svg class="floating-portfolio__icon" viewBox="0 0 24 24">
-            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M8 10c0 0 1.5-1.5 4-1.5s4 1.5 4 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M6 16l2.5-6 2.5 3 2.5-3 2.5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         Портфолио
     </a>
@@ -546,5 +681,73 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
     <script src="js/main.js" defer></script>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <!-- Логотип и описание -->
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo">
+                        <img src="assets/logo.png" alt="LandPlan" class="footer__logo-img">
+                    </a>
+                    <p class="footer__description">
+                        Создаем уникальные ландшафтные проекты, воплощая ваши мечты об идеальном саде в реальность
+                    </p>
+                </div>
+
+                <!-- Навигация -->
+                <div class="footer__nav">
+                    <h3 class="footer__title">Карта сайта</h3>
+                    <ul class="footer__nav-list">
+                        <li><a href="#about" class="footer__link">О студии</a></li>
+                        <li><a href="#services" class="footer__link">Услуги</a></li>
+                        <li><a href="portfolio.html" class="footer__link">Портфолио</a></li>
+                        <li><a href="#step_by_step" class="footer__link">Поэтапность</a></li>
+                        <li><a href="#advantages" class="footer__link">Преимущества</a></li>
+                        <li><a href="#reviews" class="footer__link">Отзывы</a></li>
+                    </ul>
+                </div>
+
+                <!-- Социальные сети -->
+                <div class="footer__social">
+                    <h3 class="footer__title">Связаться с нами</h3>
+                    <div class="footer__social-links">
+                        <a href="https://t.me/LandPlanBot" class="footer__social-link footer__social-link--telegram-bot">
+                            <svg class="footer__social-icon" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.11.02-1.93 1.23-5.46 3.62-.51.35-.98.53-1.39.52-.46-.01-1.33-.26-1.98-.47-.8-.26-1.43-.4-1.38-.85.03-.22.45-.45 1.26-.68 4.93-2.15 8.24-3.57 9.95-4.26.75-.31 1.8-.76 2.28-.62.27.08.43.36.48.63z"/>
+                            </svg>
+                            <span>Telegram Bot</span>
+                        </a>
+                        <a href="https://t.me/landplan_58" class="footer__social-link footer__social-link--telegram">
+                            <svg class="footer__social-icon" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.11.02-1.93 1.23-5.46 3.62-.51.35-.98.53-1.39.52-.46-.01-1.33-.26-1.98-.47-.8-.26-1.43-.4-1.38-.85.03-.22.45-.45 1.26-.68 4.93-2.15 8.24-3.57 9.95-4.26.75-.31 1.8-.76 2.28-.62.27.08.43.36.48.63z"/>
+                            </svg>
+                            <span>Telegram Channel</span>
+                        </a>
+                        <a href="https://wa.me/79631007872" class="footer__social-link footer__social-link--whatsapp">
+                            <svg class="footer__social-icon" viewBox="0 0 24 24">
+                                <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 10c0 4 3 4 3 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Политика конфиденциальности -->
+                <div class="footer__policy">
+                    <h3 class="footer__title">Документы</h3>
+                    <ul class="footer__policy-list">
+                        <li><a href="/privacy" class="footer__link">Политика конфиденциальности</a></li>
+                        <li><a href="/terms" class="footer__link">Пользовательское соглашение</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2025 LandPlan. Все права защищены</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html> 
