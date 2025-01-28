@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Портфолио проектов студии ландшафтного дизайна Land Plan">
+    <title>Портфолио - Land Plan</title>
+    
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <!-- Прелоадер -->
+    <div class="preloader">
+        <div class="preloader__plant"></div>
+    </div>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container header__container">
+            <!-- Логотип -->
+            <a href="/" class="logo">
+                <img src="assets/logo.png" alt="Land Plan" class="logo__img">
+            </a>
+
+            <!-- Мобильное меню -->
+            <button class="burger" aria-label="Открыть меню">
+                <span class="burger__line"></span>
+            </button>
+
+            <!-- Навигация -->
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">О студии</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">Услуги</a></li>
+                    <li class="nav__item"><a href="index.html#step_by_step" class="nav__link">Поэтапность</a></li>
+                    <li class="nav__item"><a href="index.html#contacts" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <!-- Контакты в шапке -->
+            <div class="header__contacts">
+                <a href="https://t.me/LandPlanBot" class="header__bot-button" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.3333 1.66666L9.16667 10.8333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18.3333 1.66666L12.5 18.3333L9.16667 10.8333L1.66667 7.49999L18.3333 1.66666Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Записаться на консультацию
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="main">
+        <!-- Вступительная секция -->
+        <section class="portfolio-intro">
+            <div class="container">
+                <h1 class="portfolio-intro__title">Наши проекты</h1>
+                <p class="portfolio-intro__description">
+                    Каждый проект - это уникальная история, где мы воплощаем мечты наших клиентов в реальность. 
+                    Познакомьтесь с нашими работами и вдохновитесь идеями для своего будущего сада.
+                </p>
+            </div>
+        </section>
+
+        <!-- Сетка проектов -->
+        <section class="portfolio-grid">
+            <div class="container">
+                <div class="portfolio-grid__container">
+                    <!-- Проект 1 -->
+                    <article class="project-card">
+                        <img src="assets/portfolio/projects/project1/cover.jpg" alt="Современный минимализм" class="project-card__image">
+                        <div class="project-card__content">
+                            <div class="project-card__years">2022 - 2023</div>
+                            <h2 class="project-card__title">Современный минимализм</h2>
+                            <span class="project-card__style">Минималистичный</span>
+                            <p class="project-card__description">
+                                Проект частного сада площадью 15 соток. Сочетание геометрических форм и природных материалов.
+                            </p>
+                            <a href="project1.html" class="button">Подробнее</a>
+                        </div>
+                    </article>
+
+                    <!-- Проект 2 -->
+                    <article class="project-card">
+                        <img src="assets/portfolio/projects/project2/cover.jpg" alt="Природный оазис" class="project-card__image">
+                        <div class="project-card__content">
+                            <div class="project-card__years">2021 - 2022</div>
+                            <h2 class="project-card__title">Природный оазис</h2>
+                            <span class="project-card__style">Природный стиль</span>
+                            <p class="project-card__description">
+                                Ландшафтный проект загородного участка 25 соток с природным прудом и зонами отдыха.
+                            </p>
+                            <a href="project2.html" class="button">Подробнее</a>
+                        </div>
+                    </article>
+
+                    <!-- Проект 3 -->
+                    <article class="project-card">
+                        <img src="assets/portfolio/projects/project3/cover.jpg" alt="Классический сад" class="project-card__image">
+                        <div class="project-card__content">
+                            <div class="project-card__years">2023</div>
+                            <h2 class="project-card__title">Классический сад</h2>
+                            <span class="project-card__style">Классический</span>
+                            <p class="project-card__description">
+                                Элегантный сад площадью 40 соток с регулярной планировкой и классическими элементами.
+                            </p>
+                            <a href="project3.html" class="button">Подробнее</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Стили и скрипты -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+</body>
+</html> 

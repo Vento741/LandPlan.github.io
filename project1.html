@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Современный минимализм - проект ландшафтного дизайна от студии Land Plan">
+    <title>Современный минимализм - Land Plan</title>
+    
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <!-- Прелоадер -->
+    <div class="preloader">
+        <div class="preloader__plant"></div>
+    </div>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container header__container">
+            <!-- Логотип -->
+            <a href="/" class="logo">
+                <img src="assets/logo.png" alt="Land Plan" class="logo__img">
+            </a>
+
+            <!-- Мобильное меню -->
+            <button class="burger" aria-label="Открыть меню">
+                <span class="burger__line"></span>
+            </button>
+
+            <!-- Навигация -->
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">О студии</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">Услуги</a></li>
+                    <li class="nav__item"><a href="index.html#step_by_step" class="nav__link">Поэтапность</a></li>
+                    <li class="nav__item"><a href="portfolio.html" class="nav__link">Портфолио</a></li>
+                    <li class="nav__item"><a href="index.html#contacts" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <!-- Контакты в шапке -->
+            <div class="header__contacts">
+                <a href="https://t.me/LandPlanBot" class="header__bot-button" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.3333 1.66666L9.16667 10.8333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18.3333 1.66666L12.5 18.3333L9.16667 10.8333L1.66667 7.49999L18.3333 1.66666Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Записаться на консультацию
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="project">
+        <!-- Шапка проекта -->
+        <header class="project__header">
+            <div class="project__header-bg" style="background-image: url('assets/portfolio/projects/project1/main.jpg');"></div>
+            <div class="project__header-content">
+                <h1 class="project__title">Современный минимализм</h1>
+                <div class="project__meta">
+                    <div class="project__meta-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span>2022 - 2023</span>
+                    </div>
+                    <div class="project__meta-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 10H3M21 6H3M21 14H3M21 18H3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span>Минималистичный стиль</span>
+                    </div>
+                    <div class="project__meta-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M3 3H21V21H3V3Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M3 9H21M3 15H21" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <span>15 соток</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Контент проекта -->
+        <div class="project__content">
+            <div class="container">
+                <!-- Описание проекта -->
+                <section class="project__section">
+                    <h2 class="project__section-title">О проекте</h2>
+                    <p class="project__text">
+                        Проект частного сада, выполненный в современном минималистичном стиле. Основная задача - создать 
+                        функциональное и эстетичное пространство, где каждый элемент имеет свое назначение. В основе 
+                        концепции - сочетание геометрических форм и природных материалов.
+                    </p>
+                    <div class="project__gallery">
+                        <img src="assets/portfolio/projects/project1/1.jpg" alt="Общий вид сада" class="project__image">
+                        <img src="assets/portfolio/projects/project1/2.jpg" alt="Зона отдыха" class="project__image">
+                        <img src="assets/portfolio/projects/project1/3.jpg" alt="Дорожки" class="project__image">
+                    </div>
+                </section>
+
+                <!-- Особенности проекта -->
+                <section class="project__section">
+                    <h2 class="project__section-title">Особенности проекта</h2>
+                    <p class="project__text">
+                        В проекте реализованы современные решения для комфортного отдыха и времяпрепровождения. 
+                        Использованы засухоустойчивые растения, требующие минимального ухода. Система автоматического 
+                        полива обеспечивает оптимальный режим увлажнения.
+                    </p>
+                    <div class="project__gallery">
+                        <img src="assets/portfolio/projects/project1/4.jpg" alt="Система полива" class="project__image">
+                        <img src="assets/portfolio/projects/project1/5.jpg" alt="Растения" class="project__image">
+                        <img src="assets/portfolio/projects/project1/6.jpg" alt="Освещение" class="project__image">
+                    </div>
+                </section>
+
+                <!-- Визуализации -->
+                <section class="project__section">
+                    <h2 class="project__section-title">Визуализации проекта</h2>
+                    <p class="project__text">
+                        На этапе проектирования были созданы детальные 3D-визуализации, позволяющие оценить будущий 
+                        результат и внести необходимые корректировки. Это помогло точно воплотить все идеи и пожелания 
+                        заказчика.
+                    </p>
+                    <div class="project__gallery">
+                        <img src="assets/portfolio/projects/project1/viz1.jpg" alt="Визуализация 1" class="project__image">
+                        <img src="assets/portfolio/projects/project1/viz2.jpg" alt="Визуализация 2" class="project__image">
+                        <img src="assets/portfolio/projects/project1/viz3.jpg" alt="Визуализация 3" class="project__image">
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Стили и скрипты -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+</body>
+</html> 
