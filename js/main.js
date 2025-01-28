@@ -146,47 +146,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Анимация счетчиков в секции преимуществ
-function animateCounter(counter) {
-    const target = parseInt(counter.dataset.value);
-    const numberElement = counter.querySelector('.advantage-card__number');
-    const duration = 2000; // 2 секунды на анимацию
-    const step = target / (duration / 16); // 16ms - примерное время одного фрейма
-    let current = 0;
-
-    const updateCounter = () => {
-        current += step;
-        if (current < target) {
-            numberElement.textContent = Math.floor(current);
-            requestAnimationFrame(updateCounter);
-        } else {
-            numberElement.textContent = target;
-        }
-    };
-
-    updateCounter();
-}
-
-// Запуск анимации счетчиков при появлении в области видимости
-const counterObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const counters = entry.target.querySelectorAll('.advantage-card__counter');
-            counters.forEach(counter => animateCounter(counter));
-            counterObserver.unobserve(entry.target);
-        }
-    });
-}, {
-    threshold: 0.5
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    const advantagesSection = document.querySelector('.advantages');
-    if (advantagesSection) {
-        counterObserver.observe(advantagesSection);
-    }
-});
-
 // Инициализация слайдера отзывов
 const reviewsSlider = new Swiper('.reviews__slider', {
     slidesPerView: 1,

@@ -23,7 +23,7 @@
     <header class="header">
         <div class="container header__container">
             <!-- Логотип -->
-            <a href="/" class="logo">
+            <a href="index.html" class="logo">
                 <img src="assets/logo.png" alt="Land Plan" class="logo__img">
             </a>
 
@@ -38,7 +38,6 @@
                     <li class="nav__item"><a href="#about" class="nav__link">О студии</a></li>
                     <li class="nav__item"><a href="#services" class="nav__link">Услуги</a></li>
                     <li class="nav__item"><a href="#step_by_step" class="nav__link">Поэтапность</a></li>
-                    <li class="nav__item"><a href="#advantages" class="nav__link">Преимущества</a></li>
                     <li class="nav__item"><a href="#reviews" class="nav__link">Отзывы</a></li>
                 </ul>
             </nav>
@@ -141,11 +140,11 @@
         <!-- О студии -->
         <section class="about" id="about">
             <div class="container">
-                <h2 class="section-title animate-on-scroll">О студии Land Plan</h2>
+                <h2 class="section-title section-title--about animate-on-scroll">О студии Land Plan</h2>
                 <p class="about__description animate-on-scroll">
-                    Мы создаем уникальные ландшафтные проекты, где каждая деталь продумана до мелочей. 
-                    Наша команда профессионалов специализируется на комплексном подходе: от проектирования 
-                    до подбора материалов и авторского надзора за реализацией.
+                    Мы воплощаем мечты в реальность, создавая уникальные ландшафтные проекты, где каждый элемент — 
+                    это часть единой гармоничной композиции. Наша команда профессионалов берет на себя полный цикл работ: 
+                    от первого эскиза до последнего штриха в реализации, обеспечивая безупречное качество на каждом этапе.
                 </p>
                 <div class="about__team">
                     <article class="about__member animate-on-scroll">
@@ -200,7 +199,7 @@
         <!-- Услуги -->
         <section class="services" id="services">
             <div class="container">
-                <h2 class="section-title animate-on-scroll">Наши услуги</h2>
+                <h2 class="section-title section-title--services animate-on-scroll">Наши услуги</h2>
                 <div class="services__grid">
                     <!-- Проектирование -->
                     <article class="service-card animate-on-scroll" data-service="design">
@@ -439,7 +438,7 @@
         <!-- Процесс работы -->
         <section class="process" id="step_by_step">
             <div class="container">
-                <h2 class="section-title animate-on-scroll">Как мы работаем</h2>
+                <h2 class="section-title section-title--process animate-on-scroll">Как мы работаем</h2>
                 
                 <div class="process__timeline">
                     <!-- Этап 1 -->
@@ -533,76 +532,10 @@
             </div>
         </section>
 
-        <!-- Преимущества -->
-        <section class="advantages" id="advantages">
-            <div class="container">
-                <h2 class="section-title animate-on-scroll">Наши преимущества</h2>
-                <div class="advantages__grid">
-                    <!-- Карточка 1 -->
-                    <div class="advantage-card animate-on-scroll">
-                        <div class="advantage-card__icon">
-                            <svg class="advantage-card__icon-svg" viewBox="0 0 24 24" fill="none">
-                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
-                                <path d="M7.5 12L10.5 15L16.5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                        <h3 class="advantage-card__title">Опыт и профессионализм</h3>
-                        <p class="advantage-card__description">
-                            Команда опытных специалистов с профильным образованием и обширным портфолио проектов
-                        </p>
-                        <div class="advantage-card__counter" data-value="7">
-                            <span class="advantage-card__number">7</span>
-                            <span class="advantage-card__unit">лет</span>
-                        </div>
-                        <span class="advantage-card__label">Успешной работы</span>
-                    </div>
-
-                    <!-- Карточка 2 -->
-                    <div class="advantage-card animate-on-scroll">
-                        <div class="advantage-card__icon">
-                            <svg class="advantage-card__icon-svg" viewBox="0 0 24 24" fill="none">
-                                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2"/>
-                                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2"/>
-                                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2"/>
-                            </svg>
-                        </div>
-                        <h3 class="advantage-card__title">Комплексный подход</h3>
-                        <p class="advantage-card__description">
-                            От проектирования до реализации и последующего обслуживания вашего сада
-                        </p>
-                        <div class="advantage-card__counter" data-value="100">
-                            <span class="advantage-card__number">100</span>
-                            <span class="advantage-card__unit">+</span>
-                        </div>
-                        <span class="advantage-card__label">Реализованных проектов</span>
-                    </div>
-
-                    <!-- Карточка 3 -->
-                    <div class="advantage-card animate-on-scroll">
-                        <div class="advantage-card__icon">
-                            <svg class="advantage-card__icon-svg" viewBox="0 0 24 24" fill="none">
-                                <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M9 10c0 4 3 4 3 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
-                        </div>
-                        <h3 class="advantage-card__title">Гарантия качества</h3>
-                        <p class="advantage-card__description">
-                            Авторский надзор и гарантийное обслуживание всех выполненных работ
-                        </p>
-                        <div class="advantage-card__counter" data-value="3">
-                            <span class="advantage-card__number">3</span>
-                            <span class="advantage-card__unit">года</span>
-                        </div>
-                        <span class="advantage-card__label">Гарантии на работы</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Отзывы -->
         <section class="reviews" id="reviews">
             <div class="container">
-                <h2 class="section-title animate-on-scroll">Отзывы наших клиентов</h2>
+                <h2 class="section-title section-title--reviews animate-on-scroll">Отзывы наших клиентов</h2>
                 <div class="reviews__slider swiper">
                     <div class="swiper-wrapper">
                         <!-- Отзыв 1 -->
@@ -687,7 +620,7 @@
             <div class="footer__grid">
                 <!-- Логотип и описание -->
                 <div class="footer__brand">
-                    <a href="/" class="footer__logo">
+                    <a href="index.html" class="footer__logo">
                         <img src="assets/logo.png" alt="LandPlan" class="footer__logo-img">
                     </a>
                     <p class="footer__description">
@@ -703,7 +636,6 @@
                         <li><a href="#services" class="footer__link">Услуги</a></li>
                         <li><a href="portfolio.html" class="footer__link">Портфолио</a></li>
                         <li><a href="#step_by_step" class="footer__link">Поэтапность</a></li>
-                        <li><a href="#advantages" class="footer__link">Преимущества</a></li>
                         <li><a href="#reviews" class="footer__link">Отзывы</a></li>
                     </ul>
                 </div>
