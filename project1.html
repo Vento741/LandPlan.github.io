@@ -100,10 +100,31 @@
                         функциональное и эстетичное пространство, где каждый элемент имеет свое назначение. В основе 
                         концепции - сочетание геометрических форм и природных материалов.
                     </p>
-                    <div class="project__gallery">
-                        <img src="assets/portfolio/projects/project1/1.jpg" alt="Общий вид сада" class="project__image">
-                        <img src="assets/portfolio/projects/project1/2.jpg" alt="Зона отдыха" class="project__image">
-                        <img src="assets/portfolio/projects/project1/3.jpg" alt="Дорожки" class="project__image">
+                    <div class="project__slider-container">
+                        <div class="project__slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="assets/portfolio/projects/project1/1.jpg" alt="Общий вид сада">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/portfolio/projects/project1/2.jpg" alt="Зона отдыха">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/portfolio/projects/project1/3.jpg" alt="Дорожки">
+                                </div>
+                            </div>
+                            <!-- Навигация -->
+                            <div class="project__slider-nav project__slider-prev project__slider-prev-1">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M15 18l-6-6 6-6"/>
+                                </svg>
+                            </div>
+                            <div class="project__slider-nav project__slider-next project__slider-next-1">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M9 18l6-6-6-6"/>
+                                </svg>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
@@ -115,10 +136,31 @@
                         Использованы засухоустойчивые растения, требующие минимального ухода. Система автоматического 
                         полива обеспечивает оптимальный режим увлажнения.
                     </p>
-                    <div class="project__gallery">
-                        <img src="assets/portfolio/projects/project1/4.jpg" alt="Система полива" class="project__image">
-                        <img src="assets/portfolio/projects/project1/5.jpg" alt="Растения" class="project__image">
-                        <img src="assets/portfolio/projects/project1/6.jpg" alt="Освещение" class="project__image">
+                    <div class="project__slider-container">
+                        <div class="project__slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="assets/portfolio/projects/project1/4.jpg" alt="Система полива">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/portfolio/projects/project1/5.jpg" alt="Растения">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/portfolio/projects/project1/6.jpg" alt="Освещение">
+                                </div>
+                            </div>
+                            <!-- Навигация -->
+                            <div class="project__slider-nav project__slider-prev project__slider-prev-2">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M15 18l-6-6 6-6"/>
+                                </svg>
+                            </div>
+                            <div class="project__slider-nav project__slider-next project__slider-next-2">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M9 18l6-6-6-6"/>
+                                </svg>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
@@ -130,10 +172,31 @@
                         результат и внести необходимые корректировки. Это помогло точно воплотить все идеи и пожелания 
                         заказчика.
                     </p>
-                    <div class="project__gallery">
-                        <img src="assets/portfolio/projects/project1/viz1.jpg" alt="Визуализация 1" class="project__image">
-                        <img src="assets/portfolio/projects/project1/viz2.jpg" alt="Визуализация 2" class="project__image">
-                        <img src="assets/portfolio/projects/project1/viz3.jpg" alt="Визуализация 3" class="project__image">
+                    <div class="project__slider-container">
+                        <div class="project__slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="assets/portfolio/projects/project1/viz1.jpg" alt="Визуализация 1">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/portfolio/projects/project1/viz2.jpg" alt="Визуализация 2">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/portfolio/projects/project1/viz3.jpg" alt="Визуализация 3">
+                                </div>
+                            </div>
+                            <!-- Навигация -->
+                            <div class="project__slider-nav project__slider-prev project__slider-prev-3">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M15 18l-6-6 6-6"/>
+                                </svg>
+                            </div>
+                            <div class="project__slider-nav project__slider-next project__slider-next-3">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M9 18l6-6-6-6"/>
+                                </svg>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -144,6 +207,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
     <script src="js/main.js" defer></script>
+    <script src="js/project-slider.js" defer></script>
 
     <footer class="footer">
         <div class="container">
@@ -238,5 +302,25 @@
             box-shadow: 0 5px 15px rgba(43, 122, 72, 0.03);
         }
     </style>
+
+    <!-- Добавить перед закрывающим тегом body -->
+    <div class="fullscreen-overlay">
+        <div class="fullscreen-close">
+            <svg viewBox="0 0 24 24">
+                <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="fullscreen-nav fullscreen-prev">
+            <svg viewBox="0 0 24 24">
+                <path d="M15 18l-6-6 6-6" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <img class="fullscreen-image" src="" alt="">
+        <div class="fullscreen-nav fullscreen-next">
+            <svg viewBox="0 0 24 24">
+                <path d="M9 18l6-6-6-6" stroke-linecap="round"/>
+            </svg>
+        </div>
+    </div>
 </body>
 </html> 

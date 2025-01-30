@@ -164,3 +164,4 @@ const reviewsSlider = new Swiper('.reviews__slider', {
         }
     }
 }); 
+

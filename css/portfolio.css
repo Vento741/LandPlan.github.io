@@ -281,4 +281,281 @@
     .project__gallery {
         grid-template-columns: 1fr;
     }
+
+    .project__content {
+        padding: 30px 15px;
+    }
+
+    .project__section {
+        margin-bottom: 40px;
+    }
+
+    .project__section-title {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+
+    .project__text {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 430px) {
+    .project__content {
+        padding: 25px 10px;
+    }
+
+    .project__section-title {
+        font-size: 1.5rem;
+        padding: 0 5px;
+    }
+
+    .project__text {
+        padding: 0 5px;
+    }
+}
+
+@media (max-width: 393px) {
+    .project__content {
+        padding: 20px 8px;
+    }
+
+    .project__section-title {
+        font-size: 1.4rem;
+        padding: 0 3px;
+        text-align: center;
+    }
+
+    .project__text {
+        font-size: 0.9rem;
+        padding: 0 3px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 320px) {
+    .project__content {
+        padding: 15px 5px;
+    }
+
+    .project__section-title {
+        font-size: 1.3rem;
+        padding: 0 2px;
+        text-align: center;
+    }
+
+    .project__text {
+        font-size: 0.85rem;
+        padding: 0 2px;
+        text-align: center;
+    }
+}
+
+/* Стили для слайдера проекта */
+.project__slider-container {
+    position: relative;
+    margin: 30px -20px;
+    padding: 0 20px;
+}
+
+.project__slider {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.project__slider .swiper-slide {
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.project__slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Кнопки навигации слайдера */
+.project__slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project__slider-nav:hover {
+    background: var(--color-white);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.project__slider-prev {
+    left: 30px;
+}
+
+.project__slider-next {
+    right: 30px;
+}
+
+.project__slider-nav svg {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: var(--color-primary);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* Адаптивные стили для слайдера */
+@media (max-width: 768px) {
+    .project__slider-container {
+        margin: 20px -15px;
+        padding: 0 15px;
+    }
+
+    .project__slider-nav {
+        width: 35px;
+        height: 35px;
+    }
+
+    .project__slider-prev {
+        left: 20px;
+    }
+
+    .project__slider-next {
+        right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project__slider-container {
+        margin: 15px -40px;
+        padding: 0 10px;
+    }
+
+    .project__slider .swiper-slide {
+        aspect-ratio: 4/3;
+    }
+
+    .project__slider-nav {
+        width: 30px;
+        height: 30px;
+    }
+
+    .project__slider-nav svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .project__slider-prev {
+        left: 15px;
+    }
+
+    .project__slider-next {
+        right: 15px;
+    }
+}
+
+/* Стили для полноэкранного просмотра */
+.fullscreen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.fullscreen-overlay.active {
+    display: flex;
+    opacity: 1;
+}
+
+.fullscreen-image {
+    max-width: 95%;
+    max-height: 95vh;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.fullscreen-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.fullscreen-close:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.fullscreen-close svg {
+    width: 24px;
+    height: 24px;
+    stroke: white;
+    stroke-width: 2;
+}
+
+/* Стили для навигации в полноэкранном режиме */
+.fullscreen-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.fullscreen-prev {
+    left: 20px;
+}
+
+.fullscreen-next {
+    right: 20px;
+}
+
+.fullscreen-nav:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.fullscreen-nav svg {
+    width: 24px;
+    height: 24px;
+    stroke: white;
+    stroke-width: 2;
 } 
